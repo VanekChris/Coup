@@ -9,9 +9,6 @@ class Card:
         path = "Assets/" + card_type + ".png"
         self.image = pygame.image.load(path).convert_alpha()
 
-    def __str__(self):
-        return self.card_type
-
     def draw(self, screen, x, y, scale=1, angle=0):
         if self.back_side:
             draw_image = pygame.image.load("Assets/Back.png").convert_alpha()
